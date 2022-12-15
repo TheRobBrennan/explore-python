@@ -5,6 +5,7 @@ This project will explore getting started developing with [Python](https://www.p
 It's as easy as one, two...
 
 - [ ] Step 01 - Verify Python is set up and working on your machine
+- [ ] Step 02 - Run Python in a container
 
 ## Step 01 - Verify Python is set up and working on your machine
 
@@ -78,3 +79,26 @@ A best practice in Python is to use a project-specific `virtual environment` tha
 
 That's it! Now, if you re-run the program - with or without the debugger - a plot window should appear with the output:
 ![https://code.visualstudio.com/assets/docs/python/tutorial/plot-output.png](https://code.visualstudio.com/assets/docs/python/tutorial/plot-output.png)
+
+## Step 02 - Run Python in a container
+
+The steps below are based on the [Python in a container](https://code.visualstudio.com/docs/containers/quickstart-python) guide from [Visual Studio Code](https://code.visualstudio.com)
+
+We will need to:
+
+- [ ] Add Docker files to the project
+
+### Add Docker files to the project
+
+Open the Command Palette (⇧⌘P) and choose Docker: Add Docker Files to Workspace...:
+![https://code.visualstudio.com/assets/docs/containers/quickstarts/python-add-python.png](https://code.visualstudio.com/assets/docs/containers/quickstarts/python-add-python.png)
+
+Follow the prompts to select the `Python: General` case and enter the relative path to the Hello World example - `hello-world/hello.py`
+
+Select `No` when prompted to add Docker Compose. This would be useful if we were running multiple containers or services with our application - something that is unnecessary for our Hello World example.
+
+Ta-da 🪄 As part of this process, you'll notice that a new launch configuration will be automatically created for you as `Docker: Python - General`
+
+#### OPTIONAL: Add an environment variable to the image
+
+You can optionally add `ENV key=value` to the `Dockerfile` for any environment variables you would like to be accessible.
