@@ -83,3 +83,16 @@ That's it! Now, if you re-run the program - with or without the debugger - a plo
 ## Step 02 - Run Python in a container
 
 The steps below are based on the [Python in a container](https://code.visualstudio.com/docs/containers/quickstart-python) guide from [Visual Studio Code](https://code.visualstudio.com)
+
+We will need to:
+
+- [ ] Add Docker files to the project
+
+### Add Docker files to the project
+
+Open the Command Palette (⇧⌘P) and choose Docker: Add Docker Files to Workspace...:
+![https://code.visualstudio.com/assets/docs/containers/quickstarts/python-add-python.png](https://code.visualstudio.com/assets/docs/containers/quickstarts/python-add-python.png)
+
+Follow the prompts to select the `Python: General` case and enter the relative path to the Hello World example - `hello-world/hello.py`
+
+Select `No` when prompted to add Docker Compose. This would be useful if we were running multiple containers or services with our application - something that is unnecessary for our Hello World example.
