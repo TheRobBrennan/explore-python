@@ -5,6 +5,7 @@ This project will explore getting started developing with [Python](https://www.p
 It's as easy as one, two...
 
 - [ ] Step 01 - Verify Python is set up and working on your machine
+- [ ] Step 02 - Run Python in a container
 
 ## Step 01 - Verify Python is set up and working on your machine
 
@@ -78,3 +79,7 @@ A best practice in Python is to use a project-specific `virtual environment` tha
 
 That's it! Now, if you re-run the program - with or without the debugger - a plot window should appear with the output:
 ![https://code.visualstudio.com/assets/docs/python/tutorial/plot-output.png](https://code.visualstudio.com/assets/docs/python/tutorial/plot-output.png)
+
+## Step 02 - Run Python in a container
+
+The steps below are based on the [Python in a container](https://code.visualstudio.com/docs/containers/quickstart-python) guide from [Visual Studio Code](https://code.visualstudio.com)
