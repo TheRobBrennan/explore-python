@@ -96,3 +96,7 @@ Open the Command Palette (⇧⌘P) and choose Docker: Add Docker Files to Worksp
 Follow the prompts to select the `Python: General` case and enter the relative path to the Hello World example - `hello-world/hello.py`
 
 Select `No` when prompted to add Docker Compose. This would be useful if we were running multiple containers or services with our application - something that is unnecessary for our Hello World example.
+
+#### OPTIONAL: Add an environment variable to the image
+
+You can optionally add `ENV key=value` to the `Dockerfile` for any environment variables you would like to be accessible.
