@@ -97,6 +97,8 @@ Follow the prompts to select the `Python: General` case and enter the relative p
 
 Select `No` when prompted to add Docker Compose. This would be useful if we were running multiple containers or services with our application - something that is unnecessary for our Hello World example.
 
+Ta-da 🪄 As part of this process, you'll notice that a new launch configuration will be automatically created for you as `Docker: Python - General`
+
 #### OPTIONAL: Add an environment variable to the image
 
 You can optionally add `ENV key=value` to the `Dockerfile` for any environment variables you would like to be accessible.
