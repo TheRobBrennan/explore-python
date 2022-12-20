@@ -24,13 +24,13 @@ From within VS Code, select a Python 3 interpreter by opening the Command Palett
 
 # Activate your newly created virtual environment
 % source .venv/bin/activate
-(.venv) rob@prism standard-plot %
+(.venv) rob@prism explore-python %
 
 # Select your new environment by using the Python: Select Interpreter command from earlier
 #   - Enter the path: ./.venv/bin/python
 
 # Install the packages
-(.venv) rob@prism standard-plot % python3 -m pip install matplotlib
+(.venv) rob@prism explore-python % python3 -m pip install matplotlib
 ```
 
 That's it! Now, if you re-run the program - with or without the debugger - a plot window should appear with something similar to the following output:
