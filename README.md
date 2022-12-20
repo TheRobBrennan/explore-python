@@ -30,7 +30,7 @@ From within VS Code, select a Python 3 interpreter by opening the Command Palett
 #   - Enter the path: ./.venv/bin/python
 
 # Install the packages
-(.venv) rob@prism explore-python % python3 -m pip install matplotlib
+(.venv) rob@prism explore-python % pip install -r requirements.txt
 ```
 
 That's it! Now, if you re-run the program - with or without the debugger - a plot window should appear with something similar to the following output:
