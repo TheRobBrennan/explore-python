@@ -1,6 +1,6 @@
 # Welcome
 
-This project will explore getting started developing with [Python](https://www.python.org) as quickly as possible using [Visual Studio Code](https://code.visualstudio.com) and containers.
+This project will explore getting started developing with [Python](https://www.python.org) as quickly as possible using [Visual Studio Code](https://code.visualstudio.com).
 
 ## Local development
 
