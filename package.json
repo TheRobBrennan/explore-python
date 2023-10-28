@@ -1,0 +1,18 @@
+{
+  "name": "explore-python",
+  "version": "0.0.0",
+  "description": "This project will explore getting started developing with [Python](https://www.python.org) as quickly as possible using [Visual Studio Code](https://code.visualstudio.com) and containers.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRobBrennan/explore-python.git"
+  },
+  "author": "Rob Brennan <rob@therobbrennan.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheRobBrennan/explore-python/issues"
+  },
+  "homepage": "https://github.com/TheRobBrennan/explore-python#readme"
+}
