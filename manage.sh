@@ -3,9 +3,10 @@
 # Ensure the script exits if any command fails
 set -e
 
-# Define the directory for the Python app
-APP_DIR="apps/hello-world"
-APP_SCRIPT="hello-world.py"
+# Check if APP_DIR and APP_SCRIPT environment variables are set; default to hello-world
+# APP_DIR="myappdir" APP_SCRIPT="myscript.py" ./manage.sh
+: ${APP_DIR:="apps/hello-world"}
+: ${APP_SCRIPT:="hello-world.py"}
 
 # Define the directory for the virtual environment
 VENV_DIR=".venv"
