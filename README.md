@@ -20,14 +20,23 @@ APP_DIR="myappdir" APP_SCRIPT="myscript.py" ./manage.sh
 
 This would use `myappdir` as the app directory and `myscript.py` as the application script.
 
-For developers with `npm` installed, there are several helper scripts in the `package.json` file:
+### For JavaScript Developers
 
-- "setup": "clear && ./manage.sh setup",
-- "start": "clear && ./manage.sh start",
-- "test": "clear && ./manage.sh test",
-- "test:coverage": "clear && ./manage.sh test --coverage",
-- "destroy": "clear && ./manage.sh destroy"
+If you're more familiar with JavaScript development and have `npm` installed, we've made it easier for you to work with this Python project. There are several helper scripts defined in the `package.json` file which are wrappers around the above `manage.sh` commands:
 
+- `npm run setup` - Sets up the environment and starts the application. Equivalent to `./manage.sh setup`.
+
+- `npm run start` - Starts the application. Equivalent to `./manage.sh start`.
+
+- `npm run test` - Runs all tests. Equivalent to `./manage.sh test`.
+
+- `npm run test:coverage` - Runs tests and generates a coverage report. Equivalent to `./manage.sh test --coverage`.
+
+- `npm run destroy` - Cleans up the environment by removing the virtual environment. Equivalent to `./manage.sh destroy`.
+
+- `npm repo` - Opens the project repository in your default browser. This is a quick way to access the source code, documentation, and other related resources.
+
+Utilizing these npm scripts, you can manage the Python application using commands you're familiar with from the JavaScript ecosystem.
 
 ### EXAMPLE: Hello, world!
 What project starter would be complete without an obligatory "Hello, world!" example? 🤓
