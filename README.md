@@ -4,6 +4,13 @@ This project will explore getting started developing with [Python](https://www.p
 
 ## Local development
 
+### EXAMPLE: Hello, world!
+What project starter would be complete without an obligatory "Hello, world!" example? 🤓
+
+![](./apps/hello_world/__screenshots__/test-coverage-example-00.png)
+![](./apps/hello_world/__screenshots__/test-coverage-example-01.png)
+![](./apps/hello_world/__screenshots__/test-coverage-example-02.png)
+
 ## Python cheat sheet
 If you're just getting started with Python, here are snippets of commands that you may find helpful to get you up and running in no time.
 

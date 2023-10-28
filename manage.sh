@@ -5,8 +5,8 @@ set -e
 
 # Check if APP_DIR and APP_SCRIPT environment variables are set; default to hello-world
 # APP_DIR="myappdir" APP_SCRIPT="myscript.py" ./manage.sh
-: ${APP_DIR:="apps/hello-world"}
-: ${APP_SCRIPT:="hello-world.py"}
+: ${APP_DIR:="apps/hello_world"}
+: ${APP_SCRIPT:="hello_world.py"}
 
 # Define the directory for the virtual environment
 VENV_DIR=".venv"
@@ -63,10 +63,6 @@ run_tests() {
     # Check for coverage flag
     if [[ "$1" == "--coverage" ]]; then
         pytest --cov=. --cov-config=.coveragerc --cov-report=html && open htmlcov/index.html
-
-        # Generate our code coverage badge
-        rm ./__screenshots__/coverage.svg
-        coverage-badge -o ./__screenshots__/coverage.svg
     else
         pytest
     fi
