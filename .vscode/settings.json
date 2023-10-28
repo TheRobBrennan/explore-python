@@ -6,6 +6,8 @@
     "htmlcov",
     "linspace",
     "matplotlib",
+    "myappdir",
+    "myscript",
     "pyplot",
     "pytest",
     "savefig",
