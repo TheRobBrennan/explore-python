@@ -1,8 +1,13 @@
 {
   "cSpell.words": [
+    "asyncio",
+    "devcontainer",
+    "devcontainers",
+    "htmlcov",
     "linspace",
     "matplotlib",
     "pyplot",
+    "pytest",
     "savefig",
     "simplejson",
     "venv"
