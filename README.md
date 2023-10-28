@@ -4,12 +4,13 @@ This project will explore getting started developing with [Python](https://www.p
 
 ## Local development
 
-### Install dependencies and run our project
+## Python cheat sheet
+If you're just getting started with Python, here are snippets of commands that you may find helpful to get you up and running in no time.
 
 ```sh
 # Verify that you have Python installed on your machine
 % python3 --version
-Python 3.9.6
+Python 3.11.1
 
 # Create a new virtual environment for the project
 % python3 -m venv .venv
@@ -21,24 +22,36 @@ Python 3.9.6
 % source .venv/bin/activate
 (.venv) %
 
+# PREFERRED: Install the packages from requirements.txt
+(.venv) % pip install -r requirements.txt
+
 # Install Python packages in a virtual environment
-# EXAMPLE: Install simplejson - https://pypi.org/project/simplejson/
-# % pip install simplejson
-# ... continue to install packages as needed ...
+# (.venv) % pip install <package_name>
+
+# Install Python testing packages
+# (.venv) % pip install pytest pytest-asyncio
+# (.venv) % pip install pytest-cov
 
 # When you are ready to generate a requirements.txt file
-# % pip freeze > requirements.txt
-
-# What happens if you want to uninstall a package?
+# (.venv) % pip freeze > requirements.txt
 
 # Uninstall the package from your virtual environment
-# % pip uninstall simplejson
+# (.venv) % pip uninstall simplejson
 
 # Remove the dependency from requirements.txt if it exists
-# % pip uninstall -r requirements.txt
+# (.venv) % pip uninstall -r requirements.txt
 
-# Install the packages from requirements.txt
-(.venv) % pip install -r requirements.txt
+# To run unit tests:
+# (.venv) % pytest
+
+# To run unit tests and automatically view the HTML coverage report on macOS:
+# (.venv) % pytest --cov=. --cov-report=html && open htmlcov/index.html
+
+# To run a single unit test
+# (.venv) % pytest test_something.py
+
+# Deactivate your virtual environment
+(.venv) % deactivate
+% 
+
 ```
-
-That's it! Now, if you re-run the program - with or without the debugger - your Python script should have executed.
