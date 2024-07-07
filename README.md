@@ -12,13 +12,15 @@ If you are using Python for development, the `manage.sh` script provides several
 - `./manage.sh test --coverage` - **Run tests with coverage:** This command runs all tests and generates a coverage report. The report is generated in the `htmlcov` directory, and the index page of the report is automatically opened in your default browser.
 - `./manage.sh destroy` - **Clean up the environment:** This command removes the `.venv` virtual environment, effectively deleting all the installed packages and configurations. It's useful when you want to reset your development environment.
 
+Please copy `.env.sample` to `.env` to specify a folder and initial file for the main script to run.
+
 Note: You can customize the app directory and script by setting the `APP_DIR` and `APP_SCRIPT` environment variables, respectively. For instance:
 
 ```sh
-APP_DIR="myappdir" APP_SCRIPT="myscript.py" ./manage.sh
+APP_DIR="apps/myapp" APP_SCRIPT="main.py" ./manage.sh
 ```
 
-This would use `myappdir` as the app directory and `myscript.py` as the application script.
+This would use `apps/myapp` as the app directory and `main.py` as the application script.
 
 ### For JavaScript Developers
 
@@ -38,7 +40,8 @@ If you're more familiar with JavaScript development and have `npm` installed, we
 
 Utilizing these npm scripts, you can manage the Python application using commands you're familiar with from the JavaScript ecosystem.
 
-### EXAMPLE: Hello, world!
+### EXAMPLE: Hello, world
+
 What project starter would be complete without an obligatory "Hello, world!" example? 🤓
 
 ```sh
@@ -56,6 +59,7 @@ This project also includes having an ability to debug code using VS Code - and e
 ![](./apps/hello_world/__screenshots__/test-coverage-example-02.png)
 
 ## Python cheat sheet
+
 If you're just getting started with Python, here are snippets of commands that you may find helpful to get you up and running in no time.
 
 ```sh
