@@ -1,6 +1,6 @@
 # Welcome
 
-This project will explore getting started developing with [Python](https://www.python.org) as quickly as possible using [Visual Studio Code](https://code.visualstudio.com).
+This project will explore getting started developing with [Python](https://www.python.org) as quickly as possible using ~~[Visual Studio Code](https://code.visualstudio.com)~~ [Cursor](https://www.cursor.com).
 
 ## Local development
 
@@ -49,15 +49,6 @@ What project starter would be complete without an obligatory "Hello, world!" exa
 Hello, world!
 ```
 
-This project also includes having an ability to debug code using VS Code - and example unit tests to get you started:
-
-![](./apps/hello_world/__screenshots__/vscode-debug-example-00.png)
-![](./apps/hello_world/__screenshots__/vscode-debug-example-01.png)
-
-![](./apps/hello_world/__screenshots__/test-coverage-example-00.png)
-![](./apps/hello_world/__screenshots__/test-coverage-example-01.png)
-![](./apps/hello_world/__screenshots__/test-coverage-example-02.png)
-
 ## Python cheat sheet
 
 If you're just getting started with Python, here are snippets of commands that you may find helpful to get you up and running in no time.
@@ -65,7 +56,7 @@ If you're just getting started with Python, here are snippets of commands that y
 ```sh
 # Verify that you have Python installed on your machine
 % python3 --version
-Python 3.11.1
+Python 3.13.1
 
 # Create a new virtual environment for the project
 % python3 -m venv .venv
