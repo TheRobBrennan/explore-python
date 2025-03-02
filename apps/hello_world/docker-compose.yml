@@ -9,4 +9,4 @@ services:
 
   test-coverage:
     build: .
-    entrypoint: pytest --cov=. --cov-report=html
+    entrypoint: sh -c "coverage run -m pytest && coverage report --omit='test_*.py'"
