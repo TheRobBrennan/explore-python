@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    entrypoint: python3 hello_world.py
+
+  test:
+    build: .
+    entrypoint: pytest
+
+  test-coverage:
+    build: .
+    entrypoint: sh -c "coverage run -m pytest && coverage report --omit='test_*.py'"
