@@ -14,13 +14,42 @@ If you are using Python for development, the `manage.sh` script provides several
 
 Please copy `.env.sample` to `.env` to specify a folder and initial file for the main script to run.
 
-Note: You can customize the app directory and script by setting the `APP_DIR` and `APP_SCRIPT` environment variables, respectively. For instance:
+### Configuring Your Python Project
 
-```sh
-APP_DIR="apps/myapp" APP_SCRIPT="main.py" ./manage.sh
+By default, this project is set up to run the "Hello, world!" example located at `apps/hello_world/hello_world.py`. If you want to use your own Python project, you have two options:
+
+1. **Edit the `.env` file (Recommended):**
+   - Copy `.env.sample` to `.env` if you haven't already
+   - Update the following variables in the `.env` file:
+
+     ```sh
+     APP_DIR=apps/your_project_directory
+     APP_SCRIPT=your_main_script.py
+     ```
+
+   - This is the preferred method as it persists your configuration
+
+2. **Use environment variables when running commands:**
+
+   ```sh
+   APP_DIR="apps/your_project_directory" APP_SCRIPT="your_main_script.py" ./manage.sh start
+   ```
+
+The `manage.sh` script will use these values to locate and run your Python application. Make sure your project directory contains a `requirements.txt` file if you have dependencies that need to be installed.
+
+#### Project Structure
+
+When adding your own Python project, we recommend following this structure:
+
+```txt
+apps/
+  └── your_project_directory/
+      ├── your_main_script.py
+      ├── requirements.txt
+      └── other_files.py
 ```
 
-This would use `apps/myapp` as the app directory and `main.py` as the application script.
+This keeps your project organized and allows the `manage.sh` script to find and manage your dependencies correctly.
 
 ### For JavaScript Developers
 

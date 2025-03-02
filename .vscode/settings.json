@@ -1,12 +1,14 @@
 {
   "cSpell.words": [
     "asyncio",
+    "coveragerc",
     "devcontainer",
     "devcontainers",
     "htmlcov",
     "linspace",
     "matplotlib",
     "myappdir",
+    "mydir",
     "myscript",
     "pyplot",
     "pytest",
