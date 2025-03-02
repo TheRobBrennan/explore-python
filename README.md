@@ -67,6 +67,22 @@ If you're more familiar with JavaScript development and have `npm` installed, we
 
 - `npm repo` - Opens the project repository in your default browser. This is a quick way to access the source code, documentation, and other related resources.
 
+### Using Docker
+
+If you prefer to run the application and tests in a containerized environment, we provide Docker support. Make sure you have Docker and Docker Compose installed, then use these npm scripts:
+
+- `npm run docker:build` - Builds the Docker image with all dependencies.
+
+- `npm run docker:start` - Runs the application in a Docker container.
+
+- `npm run docker:test` - Runs tests in a Docker container.
+
+- `npm run docker:test:coverage` - Runs tests with coverage report in a Docker container.
+
+- `npm run docker:clean` - Removes Docker containers, images, and volumes created by this project.
+
+The Docker environment matches the local Python version and includes all necessary dependencies. You can use either the local Python environment or Docker - both methods will work the same way.
+
 Utilizing these npm scripts, you can manage the Python application using commands you're familiar with from the JavaScript ecosystem.
 
 ### EXAMPLE: Hello, world
