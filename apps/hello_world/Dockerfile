@@ -1,5 +1,5 @@
-# Use Python 3.13.1 as base image to match local development
-FROM python:3.13.1-slim
+# Use Python 3.15.2 as base image to match local development
+FROM python:3.15.2-slim
 
 # Set working directory
 WORKDIR /app
