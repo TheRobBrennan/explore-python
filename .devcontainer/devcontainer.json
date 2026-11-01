@@ -14,9 +14,18 @@
 	// Define the timezone for your dev container's local time 🤓 - https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 	"containerEnv": {
 		"TZ": "America/Los_Angeles"
+	},
+	// Put the project venv first on PATH so `python` and `pytest` use the pinned requirements, not the image's pipx tools.
+	"remoteEnv": {
+		"PATH": "${containerWorkspaceFolder}/apps/hello_world/.venv/bin:${containerEnv:PATH}"
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"python.defaultInterpreterPath": "${containerWorkspaceFolder}/apps/hello_world/.venv/bin/python"
+			}
+		}
 	}
-	// Configure tool-specific properties.
-	// "customizations": {},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
