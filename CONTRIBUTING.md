@@ -53,6 +53,10 @@ Regular Changes:
 
 Note: The `!` indicates a breaking change and will trigger a major version bump regardless of the type prefix used.
 
+## Visuals
+
+Pull requests that add or change anything visible (diagrams, images, SVGs, README layout) must show it in the PR description: the image for a new visual, before and after for a change. Link images by commit SHA so they keep rendering after the branch is deleted. For a change with no visible effect, add the `no-visual-change` label. Details are in `CLAUDE.md`.
+
 ## Repository Configuration
 
 For repository maintainers, ensure these GitHub Actions settings are configured:

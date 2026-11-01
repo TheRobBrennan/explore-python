@@ -2,6 +2,12 @@
 
 This project will explore getting started developing with [Python](https://www.python.org) as quickly as possible using ~~[Visual Studio Code](https://code.visualstudio.com)~~ [Cursor](https://www.cursor.com).
 
+## Environments
+
+The same app runs on Python 3.15.2 locally, in Docker, and in a devcontainer.
+
+![Python 3.15.2 feeds the local macOS venv, Docker and the devcontainer, which all run apps/hello_world](docs/python-environments.svg)
+
 ## Local development
 
 If you are using Python for development, the `manage.sh` script provides several utility commands to streamline common tasks:
