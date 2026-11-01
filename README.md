@@ -101,7 +101,7 @@ If you're just getting started with Python, here are snippets of commands that y
 ```sh
 # Verify that you have Python installed on your machine
 % python3 --version
-Python 3.13.1
+Python 3.15.2
 
 # Create a new virtual environment for the project
 % python3 -m venv .venv
