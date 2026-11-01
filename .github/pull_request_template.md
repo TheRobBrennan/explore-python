@@ -18,6 +18,13 @@ version: ci       # CI/CD changes
 version: chore    # General maintenance
 version: revert   # Reverting changes
 
+## Visuals
+
+<!-- Add or change a diagram, image, SVG or README layout? Show it here: new = the image, changed = before and after. Link images by commit SHA. -->
+
+- [ ] There is no visible change, and I added the `no-visual-change` label
+- [ ] The visuals are in this description and I looked at them
+
 ## Testing
 
 - [ ] I have tested these changes locally using `act`
