@@ -2,4 +2,4 @@
 pip install --upgrade pip 
 
 # Install project dependencies
-pip install -r requirements.txt
+pip install -r apps/hello_world/requirements.txt
